@@ -1,0 +1,207 @@
+main {
+  #bio {
+    width: 100%;
+    height: 100vh;
+    background-color: $blanquito;
+    display: flex;
+    .imgContainer {
+      width: 40%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .img {
+        padding-right: 50px;
+        img {
+          width: 200px;
+          box-shadow: 0px 0px 5px 3px #7b7b7b50;
+          position: relative;
+          z-index: 9999;
+        }
+      }
+      .stainImg {
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+        img {
+          width: 300px;
+          transform: rotate(50deg);
+          opacity: 60%;
+        }
+      }
+    }
+    .infoContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .info {
+        align-items: center;
+        p {
+          margin: 10px;
+          font-family: "roboto";
+          color: $verde;
+          margin-top: 10px;
+          position: relative;
+          z-index: 999999;
+        }
+      }
+      .stainInfo {
+        position: absolute;
+        right: -60px;
+        top: 10px;
+        opacity: 80%;
+        img {
+          width: 230px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 737px) {
+  main {
+    #bio {
+      width: 100%;
+      height: 65vh;
+      background-color: $blanquito;
+      display: flex;
+      padding-top: 60px;
+      .imgContainer {
+        width: 1px;
+        height: 100%;
+        position: relative;
+        .img {
+          display: none;
+          visibility: hidden;
+        }
+        .stainImg {
+          position: absolute;
+          bottom: -90px;
+          left: 0;
+          img {
+            width: 200px;
+            transform: rotate(50deg);
+            opacity: 60%;
+          }
+        }
+      }
+      .infoContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .info {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0px;
+          p {
+            margin: 10px;
+            font-family: "roboto";
+            color: $verde;
+            margin-top: 10px;
+            position: relative;
+            z-index: 999999;
+            text-align: justify;
+            padding: 0px 10px 0px 10px;
+          }
+          .perfil {
+            background-image: url("../../assets/images/perfil.jpg");
+            width: 90%;
+            height: 210px;
+            background-size: cover;
+            background-position-y: 280px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 0px 5px 3px #7b7b7b50;
+          }
+        }
+        .stainInfo {
+          position: absolute;
+          right: 0;
+          top: -70px;
+          opacity: 80%;
+          img {
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 738px) and (max-width: 900px) {
+  main {
+    #bio {
+      width: 100%;
+      height: 50vh;
+      background-color: $blanquito;
+      display: flex;
+      .imgContainer {
+        width: 45%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .img {
+          padding-right: 30px;
+          img {
+            width: 250px;
+            box-shadow: 0px 0px 5px 3px #7b7b7b50;
+            position: relative;
+            z-index: 9999;
+          }
+        }
+        .stainImg {
+          position: absolute;
+          bottom: -45px;
+          left: -45px;
+
+          img {
+            width: 300px;
+            transform: rotate(50deg);
+            opacity: 60%;
+          }
+        }
+      }
+      .infoContainer {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .info {
+          align-items: center;
+          p {
+            margin: 10px;
+            font-family: "roboto";
+            color: $verde;
+            margin-top: 10px;
+            position: relative;
+            z-index: 999999;
+          }
+        }
+        .stainInfo {
+          position: absolute;
+          right: -40px;
+          top: 0px;
+          opacity: 80%;
+          img {
+            width: 230px;
+          }
+        }
+      }
+    }
+  }
+}

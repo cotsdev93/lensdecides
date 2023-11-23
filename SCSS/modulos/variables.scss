@@ -1,0 +1,23 @@
+$verde: #16383c;
+$celeste1: #4f81a5;
+$celeste2: #7aa7bf;
+$celeste3: #b9d6e1;
+$beige: #cbbf9c;
+$blanquito: #e1ded8;
+
+
+
+@font-face {
+    font-family: "Britania";
+    src: url(../../assets/fonts/Britania_Ligatura.ttf);
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+

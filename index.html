@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- HOJA DE ESTILO -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <script src="./javascript/script.js" defer></script>
+  </head>
+  <body id="index">
+    <header>
+      <nav>
+        <img src="../assets/images/lensLogoBlanquito.png" alt="" />
+        <button class="open"><i class="bi bi-list"></i></button>
+        <div class="navWrapper">
+          <button class="close"><i class="bi bi-x"></i></button>
+          <ul class="navList">
+            <li><a href="">Trabajos</a></li>
+            <li><a href="">Fotografia</a></li>
+            <li><a href="#bio">Biografia</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="sliderContainer">
+        <div class="slider" id="slider">
+          <section class="sliderSection">
+            <img src="../assets/images/slider01.jpg" alt="" />
+          </section>
+          <section class="sliderSection">
+            <img src="../assets/images/slider02.jpg" alt="" />
+          </section>
+          <section class="sliderSection">
+            <img src="../assets/images/slider03.jpg" alt="" />
+          </section>
+        </div>
+        <div class="btnLeft"><i class="bx bx-chevron-left"></i></div>
+        <div class="btnRight"><i class="bx bx-chevron-right"></i></div>
+      </div>
+      <br />
+      <div id="bio">
+        <div class="imgContainer">
+          <div class="img">
+            <img src="../assets/images/perfil.jpg" alt="" />
+          </div>
+          <div class="stainImg">
+            <img src="../assets/images/stain2.png" alt="" />
+          </div>
+        </div>
+        <div class="infoContainer">
+          <div class="info">
+            <p>
+              Mi nombre es <b>Florencia Corna Hayes</b>, soy una exploradora
+              apasionada del arte que encuentra su musa en la abstracción y la
+              majestuosidad de los paisajes naturales. Mi corazón late al ritmo
+              de los colores y las formas que dan vida a mis cuadros abstractos,
+              y mi cámara es mi fiel compañera en la búsqueda de la serenidad en
+              la vastedad de los paisajes.
+            </p>
+            <div class="perfil"></div>
+            <p>
+              Mis pinceles danzan sobre el lienzo para contar historias sin
+              palabras. Cada trazo es una expresión de emociones que se
+              entrelazan, formando un tapiz de pensamientos y sentimientos. Mis
+              cuadros abstractos no buscan respuestas definitivas; más bien,
+              invitan a la reflexión, desafiando a los observadores a descubrir
+              sus propias interpretaciones en medio del caos creativo.
+            </p>
+          </div>
+          <div class="stainInfo">
+            <img src="../assets/images/stain.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="jobsDone"></div>
+    </main>
+  </body>
+</html>
