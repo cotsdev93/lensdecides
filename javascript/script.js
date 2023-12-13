@@ -1,3 +1,36 @@
+let intro = document.querySelector(".intro");
+let logo = document.querySelector(".logoHeader");
+let logoSpan = document.querySelectorAll(".logo");
+let flash = document.querySelector(".flash");
+let audioFlash = document.querySelector(".audioFlash");
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    logoSpan.forEach((span, idx) => {
+      setTimeout(() => {
+        span.classList.add("active");
+      }, (idx + 1) * 900);
+    });
+
+    setTimeout(() => {
+      intro.style.top = "-100vh";
+    }, 4500);
+    
+
+    setTimeout(()=>{
+      audioFlash.play()
+    },1900)
+
+    setTimeout(() => {
+      
+      flash.classList.add("opacity");
+      setTimeout(() => {
+        flash.classList.remove("opacity");
+      }, 300);
+    }, 2500);
+  });
+});
+
 const navWrapper = document.querySelector(".navWrapper");
 const open = document.querySelector(".open");
 const close = document.querySelector(".close");
@@ -32,9 +65,9 @@ const sliderSection = document.querySelectorAll(".sliderSection");
 btnLeft.addEventListener("click", (e) => moveToLeft());
 btnRight.addEventListener("click", (e) => moveToRight());
 
-setInterval(() => {
-  moveToRight();
-}, 5000);
+// setInterval(() => {
+//   moveToRight();
+// }, 5000);
 
 let operacion = 0;
 let counter = 0;
